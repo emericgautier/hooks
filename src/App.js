@@ -17,7 +17,7 @@ const App = () => {
         <button onClick={() => setMyNumber(Number(myNumber) + 1)}>
           Incrémenter +1
         </button>
-        <label htmlFor="">Numéro de départ</label>
+        <label htmlFor=""> Numéro de départ </label>
         <input
           type="number"
           defaultValue={0}
@@ -25,6 +25,7 @@ const App = () => {
           onChange={() => setMyNumber(selectedNumber.current.value)}
         />
       </div>
+      <br />
       <OtherComponent />
     </UserNumber.Provider>
   );
